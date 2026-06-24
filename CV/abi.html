@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home/about_us/lokendra_CV</title>
+    <link rel="stylesheet" href="/head_foot.css">
+    <script src="/nav.js" defer></script>
+    <style>
+        /* through universal selector intially giving some attribute to all component */
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background: #352950;
+        }
+
+        /* this include image and name  */
+        .main_content {
+            padding: 10px;
+            height: max-content;
+            width: 100%;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .image img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border-right: 4px solid rgb(12, 109, 12);
+        }
+
+        .image h2 {
+            color: white;
+        }
+
+        /* top 2 compo image and name css ends here */
+
+
+        /* contact and it's images css starts from here */
+        .contact {
+            color: white;
+            display: flex;
+            list-style: none;
+            margin-left: 10%;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .img img {
+            background-color: white;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                transform: scale(1.1);
+            }
+        }
+
+
+        /* contact css ends here */
+
+
+        /* main text content and table are wrapped inside this wrap class so all those styling starts from here */
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text {
+            width: 80%;
+            color: white;
+            margin-top: 80px;
+            font-size: x-large;
+            font-weight: 300;
+        }
+
+        .p_git {
+            display: flex;
+            align-items: center;
+        }
+
+        .p_git img {
+            margin-left: 5px;
+            object-fit: cover;
+            object-position: center;
+            background: white;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                border-radius: 50%;
+            }
+        }
+
+        /* text content style ends here */
+
+        /* styling table and table contents */
+
+        .table {
+            color: white;
+            width: 80%;
+            height: 100%;
+        }
+
+        .table_cont {
+            width: 100%;
+        }
+
+        th {
+            font-size: large;
+            padding: 4px;
+            color: black;
+            background-color: rgb(214, 181, 208);
+        }
+
+        td {
+            padding: 4px;
+            font-size: medium;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: black;
+                transition: all 0.3s linear;
+            }
+        }
+
+        .table_cont,
+        th,
+        td {
+            text-align: center;
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        /* table contents table and other text content of wrap class ends here */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/product.html">Product</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/Research .html">Research</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search watches..."
+                style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+            <button onclick="searchWatch()"
+                style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+        </div>
+    </nav> <br><br><br><br><br>
+    <main class="main_content">
+        <div class="image">
+            <img src="abi.jpg" alt="xettri_abi6 instagram">
+            <h2>Lokendra Loniya</h2>
+        </div>
+        <br>
+        <br>
+        <div class="contact">
+            <h3>CONTACT ME </h3>
+            <div class="img">
+                <ul class="list">
+                    <li><a href="https://www.facebook.com/profile.php?id=100081020411328&mibextid=ZbWKwL"><img
+                                src="/images/facebook-circle-logo-24.png" alt="icon image from boxicon"
+                                loading="lazy"></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/in/abi-chhetri-b4aaa231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                                src="/images/linkedin-logo-24.png" alt="icon image from boxicon" loading="lazy"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/xettri_abi6?igsh=MTZyaTdqZnN0NWg1bQ=="><img
+                                src="/images/instagram-logo-24.png" alt="icon image from boxicon" loading="lazy"></a>
+                    </li>
+                    <li><a href="mailto:abichhetri6677@gmail.com"><img src="/images/gmail-logo-24.png"
+                                alt="icon image from boxicon" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="text">
+                <h2>About Me</h2>
+                <br>
+                <p>Myself &nbsp; Lokendra Loniya. I'm 19 years old. I'm currently living in kathmandu,Nepal. I am a BSc
+                    (Hons) computing student
+                    at Islington college kathmandu (ICK), passionate about becoming a software engeenier. With solid
+                    foundation in front-end
+                    technologies like html, css, javascript. I am currently enhancing my skills in backend development
+                    using java.
+                    I'm avid in doing projects.<span class="p_git"> You can check my projects in Github.
+                        <a href="https://github.com/Abi-chhetri"><img src="/images/bxl-github.svg"
+                                alt="git image"></a></span>
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>My Role in Samaya</h3>
+                <br>
+                <p>I'm leading blog page in Samaya. I have to collect info about going on event of our company samay and
+                    keep the conclusion
+                    as a content in blog so that our website visitor or our customer gets info about our company. Doing
+                    this customer will
+                    know what company is researching about and what's going on the company and what company is going to
+                    lunch about. Also, I
+                    keep about upcoming products and about lunch event of our company samaya as a content in blog page.
+                </p>
+
+                <br><br>
+            </div>
+            <div class="table">
+                <h2>Technical Skills</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>Language</th>
+                        <th>Skilled</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JavaScript</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Java</td>
+                        <td>25%</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table">
+                <h2>Education</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>School/College</th>
+                        <th>Level</th>
+                        <th>Passed Year</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tilottama</td>
+                        <td>+2 Science</td>
+                        <td>2080 B.S</td>
+                        <td>3.02</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>New Life S.S</td>
+                        <td>S.E.E</td>
+                        <td>2078 B.S</td>
+                        <td>3.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="certific" style="color: white; margin-left: 10%;">
+            <h3>Certification</h3>
+            <ul style="margin-top: 5px;">
+                <li>Successfully completed GPPC organized by Islington colllege that help me
+                    to know about data visualization about use of software like MS-EXCEl, Power Bi and more.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <img class="web_logo" src="/images/okok.png" alt="logo">
+        </div>
+        <div class="foot">
+            <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+            <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+            <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+        </div>
+        <div class="foot">
+            <a href="/home.html">HOME</a>
+            <a href="/blog.html">BLOG</a>
+            <a href="/product.html">PRODUCTS</a>
+            <a href="/aboutUs.html">ABOUT US</a>
+            <a href="">REFRENCES</a>
+        </div>
+        <div class="foot">
+            <p>&copy2025 ALL RIGHTS RESERVERD</p>
+        </div>
+        <div class="foot">
+            <h3>Policies</h3>
+            <p>careers</p>
+            <p>Shipping and order policy</p>
+            <p>warranty policy</p>
+        </div>
+        <div class="foot">
+            <h3>Contact US</h3>
+            <p>Location: Islington clz g-c1</p>
+            <p>tel: 076-12345</p>
+            <p>email: samaya@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

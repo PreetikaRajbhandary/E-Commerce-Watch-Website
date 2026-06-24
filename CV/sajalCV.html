@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home/about_us/sajal_CV</title>
+    <link rel="stylesheet" href="/head_foot.css">
+    <script src="/nav.js" defer></script>
+    <style>
+        /* through universal selector intially giving some attribute to all component */
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background: #352950;
+        }
+
+        /* this include image and name  */
+        .main_content {
+            padding: 10px;
+            height: max-content;
+            width: 100%;
+            background: #352950;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .image img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border-right: 4px solid rgb(12, 109, 12);
+        }
+
+        .image h2 {
+            color: white;
+        }
+
+        /* top 2 compo image and name css ends here */
+
+
+        /* contact and it's images css starts from here */
+        .contact {
+            color: white;
+            display: flex;
+            list-style: none;
+            margin-left: 10%;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .img img {
+            background-color: white;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                transform: scale(1.1);
+            }
+        }
+
+
+        /* contact css ends here */
+
+
+        /* main text content and table are wrapped inside this wrap class so all those styling starts from here */
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text {
+            width: 80%;
+            color: white;
+            margin-top: 80px;
+            font-size: x-large;
+            font-weight: 300;
+        }
+
+        .p_git {
+            display: flex;
+            align-items: center;
+        }
+
+        .p_git img {
+            margin-left: 5px;
+            object-fit: cover;
+            object-position: center;
+            background: white;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                border-radius: 50%;
+            }
+        }
+
+        /* text content style ends here */
+
+        /* styling table and table contents */
+
+        .table {
+            color: white;
+            width: 80%;
+            height: 100%;
+        }
+
+        .table_cont {
+            width: 100%;
+        }
+
+        th {
+            font-size: large;
+            padding: 4px;
+            color: black;
+            background-color: rgb(214, 181, 208);
+        }
+
+        td {
+            padding: 4px;
+            font-size: medium;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: black;
+                transition: all 0.3s linear;
+            }
+        }
+
+        .table_cont,
+        th,
+        td {
+            text-align: center;
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        /* table contents table and other text content of wrap class ends here */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/product.html">Product</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/Research .html">Research</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search watches..."
+                style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+            <button onclick="searchWatch()"
+                style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+        </div>
+    </nav> <br><br><br><br><br>
+    <main class="main_content">
+        <div class="image">
+            <img src="sajal-pic.jpg" alt="sajal instagram">
+            <h2>Sajal Dangal</h2>
+        </div>
+        <br>
+        <br>
+        <div class="contact">
+            <h3>CONTACT ME </h3>
+            <div class="img">
+                <ul class="list">
+                    <li><a href="https://www.facebook.com/be.i.n.g.e.n?mibextid=ZbWKwL"><img
+                                src="/images/facebook-circle-logo-24.png" alt="icon image from boxicon"
+                                loading="lazy"></a></li>
+
+                    <li><a href="https://www.facebook.com/be.i.n.g.e.n?mibextid=ZbWKwL"><img
+                                src="/images/instagram-logo-24.png" alt="icon image from boxicon" loading="lazy"></a>
+                    </li>
+                    <li><a href="mailto:dangalarun7a@gmail.com"><img src="/images/gmail-logo-24.png"
+                                alt="icon image from boxicon" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="text">
+                <h2>About Me</h2>
+                <br>
+                <p>My self Sajal Dangal. I'm 20 years old. I'm currently living in kathmandu,Nepal. Right now I am doing
+                    BSc (Hons) in computing at Islington college kathmandu (ICK). I am passionate about becoming a Cyber
+                    Security engeenier. With solid
+                    foundation in various topics/subject like Information System, Computer Hardware and Software
+                    Architecture I aim to be a good cyber security engineer.
+                    I am currently enhancing my skills in CompTIA course.
+
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>My Role in Samaya</h3>
+                <br>
+                <p>I'm leading product page in Samaya. I have to collect info about all the products of different
+                    watches company. After collecting all these information about all of thoes watches i have to keep it
+                    in my product page. It is a user-friendly webpage so that user and watch enthusiastically person can
+                    view and play around different watches.
+                </p>
+
+                <br><br>
+            </div>
+            <div class="table">
+                <h2>Technical Skills</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>Language</th>
+                        <th>Skilled</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>javascript</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Java</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table">
+                <h2>Education</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>School/College</th>
+                        <th>Level</th>
+                        <th>Passed Year</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Trinity Int SS/College</td>
+                        <td>+2 Science</td>
+                        <td>2079 B.S</td>
+                        <td>2.8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shree Siddhartha H.S.S</td>
+                        <td>S.E.E</td>
+                        <td>2077 B.S</td>
+                        <td>3.8</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="certific" style="color: white; margin-left: 10%;">
+            <h3>Certification</h3>
+            <ul style="margin-top: 5px;">
+                <li>Successfully completed HTML, SQL organized by Sololearn that help me
+                    to know about HTML, CSS, SQL and more.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <img class="web_logo" src="/images/okok.png" alt="logo">
+        </div>
+        <div class="foot">
+            <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+            <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+            <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+        </div>
+        <div class="foot">
+            <a href="/home.html">HOME</a>
+            <a href="/blog.html">BLOG</a>
+            <a href="/product.html">PRODUCTS</a>
+            <a href="/aboutUs.html">ABOUT US</a>
+            <a href="">REFRENCES</a>
+        </div>
+        <div class="foot">
+            <p>&copy2025 ALL RIGHTS RESERVERD</p>
+        </div>
+        <div class="foot">
+            <h3>Policies</h3>
+            <p>careers</p>
+            <p>Shipping and order policy</p>
+            <p>warranty policy</p>
+        </div>
+        <div class="foot">
+            <h3>Contact US</h3>
+            <p>Location: Islington clz g-c1</p>
+            <p>tel: 076-12345</p>
+            <p>email: samaya@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

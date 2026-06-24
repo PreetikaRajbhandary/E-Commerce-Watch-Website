@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home/blog</title>
+    <link rel="stylesheet" href="head_foot.css">
+    <script src="nav.js" defer></script>
+    <style>
+        /* using universal selector to specify some css property to all initially */
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* using flex box in body to maintain the main content the in middle of the screen */
+
+        body {
+            background-color: #6739cbdb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        /* using flex box in main content to keep content arranged or in center and wrap the content */
+
+        .main_content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            /* border: 1.5px solid white; */
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+            padding: 5px;
+            margin-top: 10px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #6739cbdb;
+        }
+
+        /* styling top part below nav using flex box */
+
+        header {
+            padding: 5px;
+            margin-top: 10px;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .head_fig video {
+            height: 400px;
+            width: 90%;
+            object-fit: cover;
+            object-position: center;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 10px 5px gray;
+
+            &:hover {
+                border-radius: 30px;
+                transition: border-radius .3s linear;
+            }
+        }
+
+        .head_content {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+            gap: 30px;
+            position: relative;
+            top: 181px;
+        }
+
+        .top_content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top_content h1:hover {
+            color: rgb(224, 47, 47);
+            transition: all 0.3s ease-in;
+        }
+
+        .head_btn {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 70%;
+            overflow: hidden;
+        }
+
+        .head_btn a {
+            border: 1px solid black;
+            padding: 5px 8px;
+            text-decoration: none;
+            color: black;
+            background: white;
+
+            &:hover {
+                color: white;
+                background: black;
+                transition: all 0.4s ease-in;
+            }
+
+            &:active {
+                color: white;
+                background-color: gray;
+                transition: 0.1s ease-in;
+            }
+        }
+
+
+        /* styling of main content of other blogs starts from here */
+
+        .other-blogs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            flex-wrap: wrap;
+        }
+
+        .ind_cont {
+            padding: 10px;
+            width: 350px;
+            background-color: #6739cbdb;
+            color: white;
+            /* box-shadow: 0px 0px 3px 3px rgb(154, 150, 150) inset; */
+            margin-top: 30px
+        }
+
+        .ind_cont h2 {
+            margin-top: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            font-weight: 100;
+        }
+
+        .ind_cont h2:hover {
+            color: rgb(15, 16, 16);
+        }
+
+        .ind_fig img {
+            height: 200px;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px 5px gray;
+
+            &:hover {
+                opacity: 0.7;
+                border-radius: 30px;
+                transition: border-radius 0.3s linear;
+                transform: scale(1.01);
+            }
+        }
+
+        .ind_fig video {
+            height: 200px;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px 5px gray;
+
+            &:hover {
+                opacity: 0.7;
+                border-radius: 30px;
+                transform: scale(1.01);
+                transition: border-radius 0.3s linear;
+            }
+        }
+
+        .event_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .cont_btn {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            overflow: hidden;
+            font-weight: 100;
+        }
+
+        .cont_btn a {
+            border: 1.5px solid white;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: white;
+                background: black;
+                transition: all 0.4s ease-in;
+                border: 1.5px solid black;
+            }
+
+            &:active {
+                color: white;
+                background-color: gray;
+                transition: 0.1s ease-in;
+            }
+        }
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .moving_text {
+            color: white;
+            background: black;
+            margin-bottom: -5px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- i have used internal css in many parts where i feel needed -->
+    <div class="navigation">
+        <!-- wrapping the navigation bar in this div having class navigation -->
+        <nav>
+            <div class="logo">
+                <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Research .html">Research</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search watches..."
+                    style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+                <button onclick="searchWatch()"
+                    style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+            </div>
+        </nav>
+    <div> <br><br>
+            <!-- structure of navigation bar finished here -->
+
+
+            <!-- main contents starts here  -->
+            <!-- here in main content i have widely used inline css so that no other property over write it 
+          if want to over write through external or internal css they have to use keyward !important while
+           assingin property -->
+            <div class="main_content">
+                <main style="border-radius: 6px;">
+                    <h1
+                        style="width: 100%; text-align: center; border-radius: 7px;   background-color: rgba(0, 0, 0, 0.85); border: 0px solid rgba(225, 225, 225, 0.8); color: white; box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);">
+                        Featured Blog
+                    </h1>
+                    <header>
+                        <figure class="head_fig">
+                            <video src="/images/tech.mp4" title="technology video" autoplay muted loop></video>
+                        </figure>
+
+                        <section class="head_content">
+                            <div class="top_content">
+                                <h1><b>Impact of <br>Technology in Watch Industry </h1>
+                                <p style="opacity: 0.7; font-weight: 500;">Technology has transformed the watch industry
+                                    by intoducing smart watches with advance health tr...</p>
+                            </div>
+                            <div class="head_btn"><a href="/news_pages/impact_of_tech.html"
+                                    style="border-radius: 15px;">READ MORE &#8594</a></div>
+                        </section>
+
+
+                    </header>
+                    <hr>
+
+
+
+
+                    <!-- 2nd maincontent remaining blog starts from here -->
+                    <h1
+                        style=" font-family: 'Times New Roman', Times, serif; color:white; font-weight: 400; opacity: 0.8;">
+                        All Blogs</h1>
+                    <section class="other-blogs">
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <img src="images/hybrid.webp" title="hybrid watch" alt="hybrid watch">
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Heritage meets Technology</h2>
+                                <div class="cont_btn"><a href="/news_pages/heritage_meets.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300; padding-bottom: 5px;">Sun 5 Jan 2025</span>
+                            </aside>
+
+                        </div>
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <video src="/images/rolex.mov" title="rolex" preload="metadata" autoplay muted
+                                    loop></video>
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Research on Luxury Watches</h2>
+                                <div class="cont_btn"><a href="/news_pages/Research_lux_watch.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300;">Mon 3 Oct 2024</span>
+                            </aside>
+
+                        </div>
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <img src="/images/health_smart.jpg.webp" alt="ref5711">
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Introduing Health Track Sys</h2>
+                                <div class="cont_btn"><a href="/news_pages/health_track.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300;">Fri 11 Oct 2024</span>
+                            </aside>
+
+                        </div>
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <img src="/images/Verses.jpg" alt="ref5711">
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Research on Anlog vs Digital</h2>
+                                <div class="cont_btn"><a href="/news_pages/versus.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300;">Wed 3 Oct 2024</span>
+                            </aside>
+
+                        </div>
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <video src="/images/tech.mp4" title="technology video" autoplay muted loop></video>
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Impact of Technology</h2>
+                                <div class="cont_btn"><a href="/news_pages/impact_of_tech.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300;">Tue 7 Sept 2024</span>
+                            </aside>
+
+                        </div>
+                        <div class="ind_cont">
+
+                            <figure class="ind_fig">
+                                <img src="/images/smart.jpg" title="smartWatch" alt="smart watch img">
+                            </figure>
+                            <aside class="event_cont">
+                                <h2>Innovation of Smart Watch</h2>
+                                <div class="cont_btn"><a href="/news_pages/innov_of_smart.html"
+                                        style="border-radius: 15px;">READ MORE &#8594</a></div>
+                                <span style="opacity: 0.6; font-weight: 300;">Sat 1 July 2024</span>
+                            </aside>
+
+                        </div>
+                    </section>
+
+                </main>
+
+            </div>
+            <br><br><br><br>
+            <!-- using marquee tag to display some text moving right to left -->
+            <marquee style="padding: 2px;" direction="left" class="moving_text">We are happy to lunch our hybrid watch which is our big
+                achievement till now. The lunch event is goint to be this thursday so join us and be a part of samaya.
+            </marquee>
+
+            <!-- main contents ends here -->
+
+            <!-- footer starts here -->
+            <footer>
+                <div class="foot">
+                    <img class="web_logo" src="images/okok.png" alt="logo">
+                </div>
+                <div class="foot">
+                    <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+                    <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+                    <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+                </div>
+                <div class="foot">
+                    <a href="home.html">HOME</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="product.html">PRODUCTS</a>
+                    <a href="aboutUs.html">ABOUT US</a>
+                    <a href="Research .html">RESEARCH</a>
+                </div>
+                <div class="foot">
+                    <p>&copy2025 ALL RIGHTS RESERVERD</p>
+                </div>
+                <div class="foot">
+                    <h3>Policies</h3>
+                    <p>careers</p>
+                    <p>Shipping and order policy</p>
+                    <p>warranty policy</p>
+                </div>
+                <div class="foot">
+                    <h3>Contact US</h3>
+                    <p>Location: Islington clz g-c1</p>
+                    <p>tel: 076-12345</p>
+                    <p>email: samaya@gmail.com</p>
+                </div>
+            </footer>
+            <!-- footer ends here -->
+</body>
+
+</html>

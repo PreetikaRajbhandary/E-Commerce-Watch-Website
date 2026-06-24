@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home/about_us/ananya_CV</title>
+    <link rel="stylesheet" href="/head_foot.css">
+    <script src="/nav.js" defer></script>
+    <style>
+        /* through universal selector intially giving some attribute to all component */
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background: #352950;
+        }
+
+        /* this include image and name  */
+        .main_content {
+            padding: 10px;
+            height: max-content;
+            width: 100%;
+            background: #352950;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .image img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border-right: 4px solid rgb(12, 109, 12);
+        }
+
+        .image h2 {
+            color: white;
+        }
+
+        /* top 2 compo image and name css ends here */
+
+
+        /* contact and it's images css starts from here */
+        .contact {
+            color: white;
+            display: flex;
+            list-style: none;
+            margin-left: 10%;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .img img {
+            background-color: white;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                transform: scale(1.1);
+            }
+        }
+
+
+        /* contact css ends here */
+
+
+        /* main text content and table are wrapped inside this wrap class so all those styling starts from here */
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text {
+            width: 80%;
+            color: white;
+            margin-top: 80px;
+            font-size: x-large;
+            font-weight: 300;
+        }
+
+        .p_git {
+            display: flex;
+            align-items: center;
+        }
+
+        .p_git img {
+            margin-left: 5px;
+            object-fit: cover;
+            object-position: center;
+            background: white;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: aqua;
+                border-radius: 50%;
+            }
+        }
+
+        /* text content style ends here */
+
+        /* styling table and table contents */
+
+        .table {
+            color: white;
+            width: 80%;
+            height: 100%;
+        }
+
+        .table_cont {
+            width: 100%;
+        }
+
+        th {
+            font-size: large;
+            padding: 4px;
+            color: black;
+            background-color: rgb(214, 181, 208);
+        }
+
+        td {
+            padding: 4px;
+            font-size: medium;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: black;
+                transition: all 0.3s linear;
+            }
+        }
+
+        .table_cont,
+        th,
+        td {
+            text-align: center;
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        /* table contents table and other text content of wrap class ends here */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/product.html">Product</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/Research .html">Research</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search watches..."
+                style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+            <button onclick="searchWatch()"
+                style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+        </div>
+    </nav> <br><br><br><br><br>
+    <main class="main_content">
+        <div class="image">
+            <img src="ananya.jpeg" alt="ananyaa ">
+            <h2>Ananyaa Udas</h2>
+        </div>
+        <br>
+        <br>
+        <div class="contact">
+            <h3>CONTACT ME </h3>
+            <div class="img">
+                <ul class="list">
+
+                    <li><a href="https://www.linkedin.com/in/ananyaa-udas-331a6b320/"><img
+                                src="/images/linkedin-logo-24.png" alt="icon image from boxicon" loading="lazy"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/ananyaa_udas/"><img src="/images/instagram-logo-24.png"
+                                alt="icon image from boxicon" loading="lazy"></a></li>
+                    <li><a href="mailto:ananyaaudas@gmail.com"> <img src="/images/gmail-logo-24.png"
+                                alt="icon image from boxicon" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="text">
+                <h2>About Me</h2>
+                <br>
+                <p>I am a passionate and ambitious individual with extensive professional experience at a young age.
+                    I’ve had the privilege of serving as an advisor at an Interact Club, organizing and managing events,
+                    and
+                    being part of Rotaract Club for a year. Currently, I’m pursuing my passion for technology as a
+                    computer science
+                    student at Islington.
+
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>My Role in Samaya</h3>
+                <br>
+                <p>I'm leading about us page in Samaya. I have to collect info about our group members
+                    and the feedback provided by the customers of our company sama and to give information
+                    about what our website is about. Doing this customer can know about our company and give
+                    us the feedback for what they liked or disliked or what changes they might want us to do
+                    in our company. know what company is researching about and what's going on the company and
+                    what company is going to lunch about.
+                </p>
+
+                <br><br>
+            </div>
+            <div class="table">
+                <h2>Technical Skills</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>Language</th>
+                        <th>Skilled</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>javascript</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Java</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table">
+                <h2>Education</h2>
+                <table class="table_cont">
+                    <tr>
+                        <th>SN</th>
+                        <th>School/College</th>
+                        <th>Level</th>
+                        <th>Passed Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Delhi public School</td>
+                        <td>+2 Commerce</td>
+                        <td>2024</td>
+                        <td>79%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Delhi Public School</td>
+                        <td>S.E.E</td>
+                        <td>2022</td>
+                        <td>84%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="certific" style="color: white; margin-left: 10%;">
+            <h3>Certification</h3>
+            <ul style="margin-top: 5px;">
+                <li> Certificate of appreciation for exceptional efforts and contribution in conducting the 2nd
+                    installation
+                    Ceremony of Interact Club Of Delhi Public School on 21st July,2023.</li>
+                <li>Participated in the Zonal Leadership Training Seminar of Interact District 3292 Nepal & Bhutan.</li>
+                <li>Certificate of recognition for successfully participating in Delhi Public School Siliguri Model
+                    United Nations
+                    Championship 2022 held on 10th, 11th and 12th of November 2022, at Delhi Public School, Siliguri.
+                </li>
+                <li>Token of appreciation for contribution to the 1st Zonal Interact Fiesta.</li>
+                <li>Token of love for attending joint installation of Interact Club Of Sharadha Balika and Interact Club
+                    Of Depot.</li>
+                <li>Certificate for successfully completing the Global Professional Pathway Program (GPPC) on September
+                    30, 2024.</li>
+            </ul>
+        </div>
+        <br><br>
+
+        <div class="exp" style="color: white; margin-left: 10%;">
+            <h4>Experience</h4>
+            <ul style="margin-top: 5px;">
+                <li> Was positioned as Sergeant Of Arms at Interact Club of Delhi Public School for the rotract year
+                    2023-2024.</li>
+                <li>Was positioned as the club advisor of Interact Club Of Saradha Balika for the rotract year
+                    2023-2024.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <img class="web_logo" src="/images/okok.png" alt="logo">
+        </div>
+        <div class="foot">
+            <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+            <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+            <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+        </div>
+        <div class="foot">
+            <a href="/home.html">HOME</a>
+            <a href="/blog.html">BLOG</a>
+            <a href="/product.html">PRODUCTS</a>
+            <a href="/aboutUs.html">ABOUT US</a>
+            <a href="">REFRENCES</a>
+        </div>
+        <div class="foot">
+            <p>&copy2025 ALL RIGHTS RESERVERD</p>
+        </div>
+        <div class="foot">
+            <h3>Policies</h3>
+            <p>careers</p>
+            <p>Shipping and order policy</p>
+            <p>warranty policy</p>
+        </div>
+        <div class="foot">
+            <h3>Contact US</h3>
+            <p>Location: Islington clz g-c1</p>
+            <p>tel: 076-12345</p>
+            <p>email: samaya@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

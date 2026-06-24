@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home/aboutUS</title>
+    <link rel="stylesheet" href="head_foot.css">
+    <script src="nav.js" defer></script>
+
+    <style>
+        body {
+            background: #6739cbdb;
+            color: white;
+
+        }
+
+        .about-us {
+
+            border: 1px solid rgba(225, 225, 225, 0.8);
+            background-color: rgba(225, 225, 225, 0.4);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+            border-radius: 6px;
+            width: 98%;
+            position: relative;
+            left: 13px;
+        }
+
+        .contact {
+
+            border: 1px solid rgba(225, 225, 225, 0.8);
+            background-color: rgba(225, 225, 225, 0.4);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+            border-radius: 6px;
+            width: 470px;
+            position: relative;
+            left: 32.5%;
+            height: 665px;
+        }
+
+        .form-css {
+            height: 611px;
+
+        }
+
+        .more {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: aliceblue;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        .submit {
+            background: white;
+            color: black;
+            border: none;
+            padding: 5px;
+            font-size: medium;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-left: 45%;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        h2 {
+            /* color:  #716f72; */
+            text-decoration-line: underline;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-family: Arial, sans-serif;
+        }
+
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        header {
+            padding: 20px 30px;
+        }
+
+        .name {
+            border-radius: 20px;
+            border: none;
+            font-size: small;
+            padding: 5px;
+            height: 40px;
+        }
+
+        .i-field {
+            font-family: sans-serif;
+            height: 691.2px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Research .html">Research</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search watches..."
+                style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+            <button onclick="searchWatch()"
+                style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+        </div>
+    </nav> <br><br>
+    <!-- color: black;background-color: rgb(202, 198, 198); -->
+    <div class="about-us" style="text-align: center;">
+        <br>
+        <h2><strong>About Us</strong></h2>
+        <p style="font-size: 30px; text-align:center;">स्वागतम् to SAMAYA , where timeless elegance meets modern
+            craftsmanship.
+            It is our passion for watches that has driven us to offer only exceptional timepieces that
+            tell time, yet tell a story. The watches are made from high-quality materials and are put
+            through rigorous quality checks to ensure durability and performance.At SAMAYA, our goal
+            is to create superior timepieces to enrich your life while offering great value. We strive for a
+            world where exquisite craftsmanship is owned by all.
+        </p><br>
+    </div>
+    <br> <br>
+
+    <h3 style="text-align: center; font-size: 40px; margin-bottom: 50px;"><b>Members Information</b></h3>
+    <table style=" width: 100%; text-align: center;">
+        <tr>
+            <td>
+                <section>
+                    <figure>
+                        <a href="/CV/sajalCV.html"><img src="CV/sajal-pic.jpg" alt="Sajal" width="200" height="200"></a>
+                        <figcaption style="text-align: center;">Sajal Dangal<br>9811449000 <br><br><br> <a
+                                href="CV/sajalCV.html" class="more">MORE INFO</a></figcaption>
+                    </figure>
+                </section>
+            </td>
+
+            <td>
+                <section>
+
+                    <figure>
+                        <a href="/CV/abhishek.html"><img src="CV/abhishek.jpeg" alt="abhishek" width="200"
+                                height="200"></a>
+                        <figcaption style="text-align: center;">Abhishek Dangal<br>986604165 <br><br><br> <a
+                                href="CV/abhishek.html" class="more">MORE INFO</a></figcaption>
+                    </figure>
+
+                </section>
+            </td>
+            <td>
+                <section>
+
+                    <figure>
+                        <a href="CV/abi.html"><img src="CV/abi.jpg" alt="abi" width="200" height="200"></a>
+                        <figcaption style="text-align: center;">Lokendra Bahadur Loniya<br>9824442812 <br><br><br> <a
+                                href="CV/abi.html" class="more">MORE INFO</a></figcaption>
+                    </figure>
+
+                </section>
+            </td>
+            <td>
+                <section>
+
+                    <figure>
+                        <a href="CV/annCV.html"><img src="CV/ananya.jpeg" alt="ananyaa" width="200" height="200"></a>
+                        <figcaption style="text-align: center;">Ananyaa Udas<br>9765588557 <br><br><br> <a
+                                href="CV/annCV.html" class="more">MORE INFO</a></figcaption>
+                    </figure>
+
+                </section>
+            </td>
+            <td>
+                <section>
+
+                    <figure>
+                        <a href="CV/PreetikaCV.html"><img src="CV/preeteka.jpeg" alt="preetika" width="200"
+                                height="200"></a>
+                        <figcaption style="text-align: center;">Preetika Laxmi Rajbhandary<br>9841202318 <br><br><br> <a
+                                href="CV/PreetikaCV.html" class="more">MORE INFO</a></figcaption>
+                    </figure>
+
+                </section>
+            </td>
+
+
+
+
+
+
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h4 style="text-align:center; font-size: 40px; margin-top: 20px;"><b> GIVE US A VALUABLE FEEDBACK!!</b></h4>
+
+    <div class="contact"
+        style="text-align:left; display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+
+        <form class="form-css" name="messageForm" onsubmit="validateForm()">
+            <div class="i-field">
+                <p><b>First Name</b><br>
+                    <input type="text" name="firstname" class="name" placeholder="First Name" size="60" id="fname">
+                </p>
+
+                <p><b>Last Name</b><br>
+                    <input type="text" name="lastname" class="name" placeholder="Last Name" size="60" id="lastname">
+                </p>
+
+                <p><b>Gender</b><br>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </p>
+
+
+
+                <p><b>Contact Number</b> <br>
+                    <input type="text" name="contactnumber" class="name" placeholder="Contact Number" size="60"
+                        id="contact">
+                </p>
+
+
+                <p><b>Email Id</b><br>
+                    <input type="email" name="email id" class="name" size="60" placeholder="Email" id="email">
+                </p>
+
+                <p><b>Message</b><br>
+                    <textarea name="message" rows="8" cols="63" placeholder="write here" id="message"></textarea>
+                </p>
+                <p><input type="submit" value="Submit" class="submit"></p>
+            </div>
+
+
+
+
+        </form>
+    </div> <br><br>
+    <footer>
+        <div class="foot">
+            <img class="web_logo" src="images/okok.png" alt="logo">
+        </div>
+        <div class="foot">
+            <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+            <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+            <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+        </div>
+        <div class="foot">
+            <a href="home.html">HOME</a>
+            <a href="blog.html">BLOG</a>
+            <a href="product.html">PRODUCTS</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="Research .html">RESEARCH</a>
+        </div>
+        <div class="foot">
+            <p>&copy2025 ALL RIGHTS RESERVERD</p>
+        </div>
+        <div class="foot">
+            <h3>Policies</h3>
+            <p>careers</p>
+            <p>Shipping and order policy</p>
+            <p>warranty policy</p>
+        </div>
+        <div class="foot">
+            <h3>Contact US</h3>
+            <p>Location: Islington clz g-c1</p>
+            <p>tel: 076-12345</p>
+            <p>email: samaya@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var first = document.getElementById('fname').value;
+            var last = document.getElementById('lastname').value;
+            var contact = document.getElementById('contact').value;
+            var email = document.getElementById('email').value;
+            var feedback = document.getElementById('message').value;
+            if (first == '' || last == '' || contact == '' || email == '' || feedback == '') {
+                alert('Empty fields found.Please fill up the form.')
+            }
+            else {
+                alert(`Thank you ${first} ${last} for your valuable Feedback.`)
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

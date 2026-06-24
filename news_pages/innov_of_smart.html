@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog/innovation_of_smartWAtch</title>
+    <link rel="stylesheet" href="/head_foot.css">
+    <script src="/nav.js" defer></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #6739cbdb;
+        }
+
+        main {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contents {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 691.2px;
+            width: 80%;
+            overflow: scroll;
+            display: flex;
+            border: 1.5px solid black;
+            border-radius: 6px;
+            border: 1px solid rgba(225, 225, 225, 0.8);
+            background-color: rgba(225, 225, 225, 0.4);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        .discrp_events img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .discrp_events video {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .img_rlt_cont {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+        }
+
+        .img_rlt_cont article {
+            width: 80%;
+            margin-top: 20px;
+            opacity: 0.8;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- i have used internal css in many parts where i feel needed -->
+    <div class="navigation">
+        <!-- wrapping the navigation bar in this div having class navigation -->
+        <nav>
+            <div class="logo">
+                <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/aboutUs.html">Home</a></li>
+                <li><a href="/aboutUs.html">About Us</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/Research .html">Research</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search watches..."
+                    style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+                <button onclick="searchWatch()"
+                    style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background: white;">Search</button>
+            </div>
+        </nav>
+        <div> <br><br><br><br><br>
+            <!-- structure of navigation bar finished here -->
+
+
+            <main>
+                <div class="contents">
+                    <div class="discrp_events">
+                        <div class="image">
+                            <img src="/images/smart.jpg" alt="patek_philippe image google">
+                        </div>
+                        <div class="img_rlt_cont">
+                            <h1>Innovation of Smart Watch</h1>
+                            <article>
+                                <h4>July 1, 2024</h4>
+                                <br>
+                                <br>
+                                The smart watch in 1970's in the smart watch industry was very simple having key
+                                features like
+                                alarm and calculators. Over the time they become more advanced and started to dominate
+                                the market.
+                                <br>
+                                <br>
+                                As of now they have many smart features due to advancement in technology. Today's smart
+                                watch can do several things like
+                                <br>
+                                <br>
+                                <ul>
+                                    <li> Tracking health (heart rate, blood oxygen, sleep)</li>
+                                    <li>Having fitness feature(steps, workouts, GPS)</li>
+                                    <li>Have voice assistant</li>
+                                    <li>Can make call, show notification, send message</li>
+                                </ul>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer>
+                <div class="foot">
+                    <img class="web_logo" src="/images/okok.png" alt="logo">
+                </div>
+                <div class="foot">
+                    <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+                    <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+                    <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+                </div>
+                <div class="foot">
+                    <a href="/home.html">HOME</a>
+                    <a href="/blog.html">BLOG</a>
+                    <a href="/product.html">PRODUCTS</a>
+                    <a href="/aboutUs.html">ABOUT US</a>
+                    <a href="/Research .html">RESEARCH</a>
+                </div>
+                <div class="foot">
+                    <p>&copy2025 ALL RIGHTS RESERVERD</p>
+                </div>
+                <div class="foot">
+                    <h3>Policies</h3>
+                    <p>careers</p>
+                    <p>Shipping and order policy</p>
+                    <p>warranty policy</p>
+                </div>
+                <div class="foot">
+                    <h3>Contact US</h3>
+                    <p>Location: Islington clz g-c1</p>
+                    <p>tel: 076-12345</p>
+                    <p>email: samaya@gmail.com</p>
+                </div>
+            </footer>
+
+</body>
+
+</html>

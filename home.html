@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SAMAYA - OWN YOUR TIME</title>
+  <link rel="stylesheet" href="head_foot.css">
+  <script src="nav.js" defer></script>
+  <style>
+    .header {
+      backdrop-filter: blur(25px);
+      padding: 5px;
+      margin-top: 10px;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      color: black;
+    }
+
+    .header-R {
+      backdrop-filter: blur(25px);
+      padding: 5px;
+      margin-top: 10px;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      color: black;
+      position: relative;
+      right: 117px;
+    }
+
+    .head_fig video {
+      height: 400px;
+      width: 90%;
+      object-fit: cover;
+      object-position: center;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 5px gray;
+
+      &:hover {
+        border-radius: 30px;
+        transition: border-radius .3s linear;
+      }
+
+
+    }
+
+    .head_fig img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 5px gray;
+
+      &:hover {
+        border-radius: 30px;
+        transition: border-radius .3s linear;
+      }
+
+
+    }
+
+    .head_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 5px;
+      gap: 30px;
+    }
+
+    .head_content-R {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 5px;
+      gap: 30px;
+      position: relative;
+      left: 58px;
+    }
+
+    .top_content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+    }
+
+    .top_content-R {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+    }
+
+    .top_content-R h1:hover {
+      color: rgb(224, 47, 47);
+      transition: all 0.3s ease-in;
+    }
+
+    .top_content h1:hover {
+      color: rgb(224, 47, 47);
+      transition: all 0.3s ease-in;
+    }
+
+    .head_btn {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      width: 70%;
+      overflow: hidden;
+    }
+
+    .head_btn a {
+      border: 1px solid black;
+      padding: 5px 8px;
+      text-decoration: none;
+      color: black;
+      background: white;
+
+      &:hover {
+        color: white;
+        background: black;
+        transition: all 0.4s ease-in;
+      }
+
+      &:active {
+        color: white;
+        background-color: gray;
+        transition: 0.1s ease-in;
+      }
+    }
+
+
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: black;
+      background-color: rgb(51, 51, 51);
+    }
+
+    a {
+      text-decoration: none;
+      color: #040000;
+    }
+
+    button {
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    /* Style for the background video in the hero section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .background-video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      overflow: hidden;
+      /* Put the video behind the text */
+    }
+
+    /* body text  */
+    .bodytext {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 30px;
+      padding: 10px;
+      font-weight: bold;
+      animation: animate 10s ease-in infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        color: #8A2BE2;
+        font-weight: bold;
+        text-shadow: 1.5px 1px magenta;
+      }
+
+      20% {
+        color: #FFFFFF;
+        font-weight: bold;
+        text-shadow: 1.5px 1px magenta;
+      }
+
+      40% {
+        color: #001F3F;
+        text-shadow: 1.5px 1px magenta;
+      }
+
+      60% {
+        color: #FF007F;
+        text-shadow: 1.5px 1px magenta;
+      }
+
+      80% {
+        color: #FFD700;
+        text-shadow: 1.5px 1px magenta;
+      }
+
+      100% {
+        color: #8A2BE2;
+        text-shadow: 1.5px 1px magenta;
+      }
+    }
+
+    .samaya {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      border-radius: 50px;
+    }
+
+    .samaya:hover {
+      background-color: grey;
+    }
+
+    .watches {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      border: 1px solid rgba(225, 225, 225, 0.8);
+      background-color: rgba(225, 225, 225, 0.4);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+      width: 98%;
+      position: relative;
+      left: 14px;
+
+    }
+
+    .watches img:hover {
+      transform: translateY(-10px);
+      transition: 0.5s ease-in-out;
+      box-shadow: 10px 10px 15px 5px rgba(17, 0, 0, 0.3);
+      border-radius: 20px;
+
+
+    }
+
+    .display {
+      position: relative;
+
+    }
+
+
+
+    .top {
+      display: block;
+      justify-content: last baseline;
+      margin-bottom: 100px;
+    }
+
+    .ok p {
+      margin-top: 20px;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      color: white;
+
+    }
+
+    .Home-ft {
+      position: relative;
+      left: 43px;
+    }
+
+    .Home-om {
+      position: relative;
+      left: 78px;
+    }
+
+    .Home-r {
+
+      position: relative;
+      left: 90px;
+    }
+
+    .offer {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      height: 180px;
+    }
+
+    .offer-button {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      border-radius: 30px;
+    }
+
+    .offer-button:hover {
+
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+
+
+    }
+
+    .button-div {
+      margin-top: -85px;
+    }
+
+    .image {
+      width: 100%;
+      height: 550px;
+    }
+
+    .top-2 {
+
+      background-color: #1f1e21db;
+    }
+
+    .top-1-1 {
+
+      border: 1px solid rgba(225, 225, 225, 0.8);
+      background-color: rgba(225, 225, 225, 0.4);
+      backdrop-filter: blur(5px);
+      border-radius: 6px;
+      color: white;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    .home-blog {
+      background-color: rgb(51, 51, 51);
+    }
+
+    /* nav {
+
+      backdrop-filter: blur(25px);
+
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- igation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye">
+      </div>
+      <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/aboutUs.html">About Us</a></li>
+        <li><a href="/product.html">Product</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/Research .html">Research</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search watches..."
+          style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+        <button onclick="searchWatch()"
+          style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section Hero -->
+  <section class="hero">
+    <!-- Background Video -->
+    <video autoplay muted loop class="background-video">
+      <source src="vid/rvbg.mp4" type="video/mp4">
+    </video>
+    <!-- <img class="image" src="/images/product_bg3.jpg" alt=""> -->
+
+
+    <div class="bodytext">
+      <h1>Welcome to SAMAYA</h1>
+      <p>OWN YOUR TIME</p>
+      <a href="product.html" class="samaya">Explore Our Collection &#8594</a>
+      <br>
+      <p class="samaya" id="display"> </p>
+    </div>
+  </section>
+  <section class="top-2">
+    <br /><br />
+    <div class="disc-top-coll">
+      <h1 style="margin-left: 5%; color: white;">Discount vouchers</h1><br>
+      <div class="top-1-1"
+        style=" height: 180px; width: 100%; padding: 30px; display: flex; justify-content: space-evenly; border: 1.5px solid black; width: 95%; margin-left: 2.5%; ">
+
+        <div>
+          <div class="offer">
+            <h1>10%</h1>
+            <h3>OFF</h3>
+            <div>On Spend Rs.1000</div>
+
+          </div>
+          <div class="button-div">
+            <button class="offer-button" id="btn">Collect</button>
+          </div>
+
+
+        </div>
+        <div>
+          <div class="offer">
+            <h1>7%</h1>
+            <h3>OFF</h3>
+            <div>On Spend Rs.1200</div>
+
+          </div>
+          <div class="button-div">
+            <button class="offer-button" id="btn1">Collect</button>
+          </div>
+
+
+        </div>
+        <div>
+          <div class="offer">
+            <h1>5%</h1>
+            <h3>OFF</h3>
+            <div>On Spend Rs.1500</div>
+
+          </div>
+          <div class="button-div">
+            <button class="offer-button" id="btn2">Collect</button>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <h1 style=" text-align: center; color: white; letter-spacing: 3px; font-weight: 600; margin-bottom: 20px; font-size: xx-large; margin-top:20px ;
+      ">OUR TOP COLLECTION</h1>
+      <hr>
+      <div class="watches">
+        <div class="top"><br><br>
+          <div class="display">
+            <a href="/Product_Page_Info/Fast_Track_Reflex_Horizon.html"><img src="images/fast_track_reflex_horizon.png"
+                alt="" height="300" width="300" /></a>
+          </div>
+          <div class="ok">
+            <p class="Home-ft"><u>Fast Track Reflex Horizon</u></p>
+          </div>
+        </div>
+        <div class="top"><br><br>
+          <div class="display">
+            <a href="/Product_Page_Info/Omega_Datejust_36.html"><img src="images/om4.webp" alt="" height="300"
+                width="300" /></a>
+          </div>
+          <div class="ok">
+            <p class="Home-om"><u>Omega Datejust 36</u></p>
+          </div>
+        </div>
+
+        <div class="top"><br><br>
+          <div class="display">
+            <a href="Product_Page_Info/Rolex_GMT_Master.html"><img src="images/r3.avif" alt="" height="300" width="300"
+                style="object-fit: cover; object-position: center;" /></a>
+          </div>
+          <div class="ok">
+            <p class="Home-r"><u>GMT-Master II</u></p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+  </section>
+  <!-- <hr> -->
+  <section class="home-blog" style="position: relative;">
+    <header class="header">
+      <figure class="head_fig">
+        <video src="/images/tech.mp4" title="technology video" autoplay muted loop></video>
+      </figure>
+
+      <section class="head_content">
+        <div class="top_content">
+          <h1><b>Impact of <br>Technology in Watch Industry </h1>
+          <p style="opacity: 0.7; font-weight: 500;  color: white;">Technology has transformed the watch industry by
+            intoducing smart
+            watches with advance health tr...</p>
+        </div>
+        <div class="head_btn"><a href="blog.html" style="border-radius: 15px;">Explore Our Blogs &#8594</a></div>
+      </section>
+    </header><br><br><br>
+    <hr>
+    <br><br>
+    <section class="home-blog" style="position: relative;">
+      <header class="header-R">
+        <figure class="head_fig">
+          <img src="/images/home-ressearch.jpg" title="research photo"></img>
+        </figure>
+
+        <section class="head_content-R">
+          <div class="top_content-R">
+            <h1><b>Watch <br>our Research page </h1>
+            <p style="opacity: 0.7; font-weight: 500;  color: white;">Refrenece which we have gathered to make our
+              Webpage.
+            </p>
+          </div>
+          <div class="head_btn"><a href="Research .html" style="border-radius: 15px;">Explore Our Research &#8594</a>
+          </div>
+        </section>
+
+    </section><br><br>
+    <footer>
+      <div class="foot">
+        <img class="web_logo" src="images/okok.png" alt="logo">
+      </div>
+      <div class="foot">
+        <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+        <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+        <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+      </div>
+      <div class="foot">
+        <a href="home.html">HOME</a>
+        <a href="blog.html">BLOG</a>
+        <a href="product.html">PRODUCTS</a>
+        <a href="aboutUs.html">ABOUT US</a>
+        <a href="Research .html">RESEARCH</a>
+      </div>
+      <div class="foot">
+        <p>&copy2025 ALL RIGHTS RESERVERD</p>
+      </div>
+      <div class="foot">
+        <h3>Policies</h3>
+        <p>careers</p>
+        <p>Shipping and order policy</p>
+        <p>warranty policy</p>
+      </div>
+      <div class="foot">
+        <h3>Contact US</h3>
+        <p>Location: Islington clz g-c1</p>
+        <p>tel: 076-12345</p>
+        <p>email: samaya@gmail.com</p>
+      </div>
+    </footer>
+
+    <script>
+
+      let displayText = document.querySelector('.bodytext');
+
+      setInterval(() => {
+        displayText.style.display = 'inline'
+      }, 2000)
+
+
+
+
+      //javaScript for discount vouchers
+      let btn = document.getElementById('btn');
+      let btn1 = document.getElementById('btn1');
+      let btn2 = document.getElementById('btn2');
+
+      btn.addEventListener('click', (e) => {
+        if (btn.innerText == 'Collected') {
+          alert('Already collected');
+        }
+        else {
+          alert('Discount vouchers collected successfully');
+          btn.innerText = 'Collected';
+        }
+      })
+      btn1.addEventListener('click', (e) => {
+        if (btn1.innerText == 'Collected') {
+          alert('Already collected');
+        }
+        else {
+          alert('Discount vouchers collected successfully');
+          btn1.innerText = 'Collected';
+        }
+      })
+      btn2.addEventListener('click', (e) => {
+        if (btn2.innerText == 'Collected') {
+          alert('Already collected');
+        }
+        else {
+          alert('Discount vouchers collected successfully');
+          btn2.innerText = 'Collected';
+        }
+      })
+
+
+
+
+
+
+      //javaScript to display time
+      let time = document.getElementById('display');
+
+      //creating setInterval and inside it wrapping a function so that my time gets repetedly updated in my homepage
+      setInterval(function myFunc() {
+        let date = new Date().toLocaleString('en-US');;
+        //toLocaleString english US converts date to hours min sec and also shows AM/PM and has 12 hour time format
+
+
+        // console.log(date);
+        let actTime = date.substring(10);
+        // console.log(actTime.length);
+
+        // console.log(actTime);
+        time.innerText = `Samaya: ${actTime}`
+      }, 0)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home/product</title>
+    <link rel="stylesheet" href="/head_foot.css">
+    <script src="/nav.js" defer></script>
+    <style>
+        .card p {
+            text-align: center;
+            padding: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .button {
+            margin-top: 15px;
+        }
+
+        .button a {
+            padding: 7px;
+            /* background:rgba(175, 224, 250, 0.01); */
+            border-radius: 20px;
+            border: 1px solid black;
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6739cbdb;
+        }
+
+        nav {
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
+
+
+
+
+        footer {
+            /* position: fixed; */
+            height: max-content;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px;
+            overflow-y: hidden;
+        }
+
+        .foot {
+            font-weight: 100;
+            font-size: small;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .foot p {
+            opacity: 0.7;
+        }
+
+        .foot a {
+            font-weight: 100;
+            font-size: small;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            opacity: 0.7;
+        }
+
+        .foot a:hover {
+            opacity: 1;
+
+        }
+
+        .foot p:hover {
+            opacity: 1;
+            transition: all 0.3s linear;
+        }
+
+        .foot .web_logo {
+            height: 80px;
+            width: 150px;
+            object-fit: cover;
+            object-position: center;
+            color: white;
+        }
+
+        .foot .foot-logo {
+            background: white;
+            border-radius: 8px;
+            height: 20px;
+            width: 20px;
+        }
+
+        footer h3 {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+
+            }
+        }
+
+        nav .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .bg-vid {
+
+            z-index: -1;
+        }
+
+        .container {
+
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container2 {
+
+            position: relative;
+            top: 77px;
+        }
+
+        .box1 {
+
+            border: 1px solid rgba(225, 225, 225, 0.8);
+            background-color: rgba(225, 225, 225, 0.4);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+            height: 466px;
+            left: 60px;
+            position: relative;
+            top: 30px;
+        }
+
+        .box2 {
+
+            width: 429px;
+            position: relative;
+            left: -65px;
+            border: 0.2px solid rgba(225, 225, 225, 0.8);
+            background-color: rgba(225, 225, 225, 0.4);
+            backdrop-filter: blur(5px);
+            border-radius: 6px;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        .name {
+            font-size: 40px;
+            color: #27435b;
+            position: relative;
+            left: 12px;
+        }
+
+        .desc {
+
+            color: white;
+            font-size: 15px;
+            position: relative;
+            left: 12px;
+        }
+
+        .price {
+
+            font-size: 20px;
+            position: relative;
+            left: 12px;
+            color: #27435b;
+        }
+
+        .watch-img {
+
+            height: 404x;
+        }
+
+        .box3 {
+
+            /* background-color: green; */
+            position: relative;
+            left: 58px;
+
+        }
+
+        .box4 {
+
+            background-color: #31303063;
+            position: relative;
+            left: -63px;
+            width: 432px;
+            top: 60px;
+            height: 94px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        .btn {
+
+            height: 64px;
+            width: 241px;
+            font-size: 28px;
+            position: relative;
+            left: 65px;
+            top: 25px;
+            background-color: #640c56ad;
+            color: white;
+            border: 1px solid white;
+            border-radius: 6px;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* .product1 {} */
+
+        .p1-img {
+
+            height: 105px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <div class="navigation">
+        <nav>
+            <div class="logo">
+                <a href="/home.html"><img src="/images/okok.png" height="80px" width="100px" alt="logo of samaye"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/aboutUs.html">About Us</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/Research .html">Research</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search watches..."
+                    style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border:1px solid black;">
+                <button onclick="searchWatch()"
+                    style="border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:1px solid black; background-color: white; color: black;">Search</button>
+            </div>
+        </nav> <br><br><br><br>
+
+        <main>
+
+            <div class="container">
+
+                <div class="box1">
+                    <br>
+                    <img class="watch-img" src="/images/om1.webp" alt="">
+                </div>
+                <div class="container2">
+                    <div class="box2">
+
+                        <p class="name"><b>Dark Side</b></p> <br>
+                        <p class="desc">This Oyster Perpetual Datejust 36 in Oystersteel and white gold features a
+                            bright black dial and a Jubilee bracelet. Fluted bezel.!</p>
+                        <br>
+                        <div class="price">
+                            <p><b>Dark Side</b></p>
+                            <p><del>Rs:1,395,000</del></p>
+                            <p>
+                            <h5>Rs:1,255,500</h5>
+                            </p>
+                            <p>Dis: 10% off</p>
+                        </div>
+                    </div>
+
+                    <div class="box3">
+                        <button class="btn">Add to Cart</button>
+
+                    </div>
+
+                    <div class="box4">
+
+                        <div class="product1">
+                            <a href="Rolex_Submariner.html"><img class="p1-img" src="/images/r2.avif" alt=""></a>
+                        </div>
+
+                        <div class="product1">
+                            <a href="Rolex_GMT_Master.html"><img class="p1-img" src="/images/r3.avif" alt=""></a>
+                        </div>
+
+                        <div class="product1">
+                            <a href="Rolex_Day_Date_40.html"><img class="p1-img" src="/images/r4.avif" alt=""></a>
+                        </div>
+
+                        <div class="product1">
+                            <a href="Rolex_Datejust_36.html"><img class="p1-img" src="/images/r1.avif" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="foot">
+                <img class="web_logo" src="/images/okok.png" alt="logo">
+            </div>
+            <div class="foot">
+                <img src="/images/linkedin-logo-24.png" alt="linked in logo from boxicon" class="foot-logo">
+                <img src="/images/facebook-circle-logo-24.png" alt="facebook logo from boxicon" class="foot-logo">
+                <img src="/images/instagram-logo-24.png" alt="instagram logo from boxicon" class="foot-logo">
+            </div>
+            <div class="foot">
+                <a href="/home.html">HOME</a>
+                <a href="/blog.html">BLOG</a>
+                <a href="/product.html">PRODUCTS</a>
+                <a href="/aboutUs.html">ABOUT US</a>
+                <a href="/Research .html">RESEARCH</a>
+            </div>
+            <div class="foot">
+                <p>&copy2025 ALL RIGHTS RESERVERD</p>
+            </div>
+            <div class="foot">
+                <h3>Policies</h3>
+                <p>careers</p>
+                <p>Shipping and order policy</p>
+                <p>warranty policy</p>
+            </div>
+            <div class="foot">
+                <h3>Contact US</h3>
+                <p>Location: Islington clz g-c1</p>
+                <p>tel: 076-12345</p>
+                <p>email: samaya@gmail.com</p>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* styling the navigation bar from here */
+nav {
+    z-index: 1;
+    display: flex;
+    background: black;
+    /* background-color: #6739cbdb; */
+    /* background-color: #1f1633c1; */
+    background-color: #291f40db;
+
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+    height: 80px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo img {
+    object-fit: cover;
+    object-position: center;
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    font-size: 1.1em;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav #active {
+    background: linear-gradient(45deg, white, rgb(0, 0, 255), rgb(238, 29, 29), white);
+    color: white;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: rgb(92, 185, 0);
+    border-radius: 20px;
+
+
+}
+
+.search-bar {
+    display: flex;
+    border-radius: 6px;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+
+
+
+/* styling of nav bar ends here */
+/* styling footer from here now on */
+/* i will be using mainly flex box property  */
+
+footer {
+    height: max-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.foot {
+    font-weight: 100;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.foot p {
+    opacity: 0.7;
+}
+
+.foot a {
+    font-weight: 100;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    opacity: 0.7;
+}
+
+.foot a:hover {
+    opacity: 1;
+
+}
+
+.foot p:hover {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.foot .web_logo {
+    height: 80px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    color: white;
+}
+
+.foot .foot-logo {
+    background: white;
+    border-radius: 8px;
+    height: 20px;
+    width: 20px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+footer h3 {
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+/* styling marquee tag by adding some attractive color sand transition for smooth move */
